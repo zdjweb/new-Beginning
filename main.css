@@ -1,0 +1,39 @@
+html, body {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #222222;
+    color: #EEEEEE;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    border-radius: min(2vw, 2vh);
+    background: #333333;
+    font-size: min(4vw, 4vh);
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    animation: 2s  linear infinite opacity_change;
+}
+
+@keyframes opacity_change {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
